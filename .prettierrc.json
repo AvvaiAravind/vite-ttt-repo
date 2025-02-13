@@ -6,7 +6,7 @@
   "tailwindFunctions": ["clsx", "cn"],
   "tailwindPreserveDuplicates": true,
   "semi": true,
-  "singleQuote": true,
+  "singleQuote": false,
   "trailingComma": "es5",
   "tabWidth": 2,
   "useTabs": false,
