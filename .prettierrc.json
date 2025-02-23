@@ -3,7 +3,7 @@
   "plugins": ["prettier-plugin-tailwindcss"],
   "tailwindStylesheet": "./src/index.css",
   "tailwindAttributes": ["class", "className", "ngClass", "class:list"],
-  "tailwindFunctions": ["clsx", "cn"],
+  "tailwindFunctions": ["clsx", "cn", "classNames", "tw"],
   "tailwindPreserveDuplicates": true,
   "semi": true,
   "singleQuote": false,
