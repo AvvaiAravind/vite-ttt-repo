@@ -135,23 +135,7 @@ import MyComponent from "@src/components/MyComponent";
 
 ## Tailwind CSS
 
-Tailwind CSS is preconfigured in this template. To customize it, edit the `tailwind.config.js` file.
-
-### Example:
-
-To add custom colors:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        customBlue: '#1E40AF',
-      },
-    },
-  },
-};
-
+Tailwind CSS is pre configured with tailwind v4 in this template
 
 ---
 
