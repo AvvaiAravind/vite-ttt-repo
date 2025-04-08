@@ -18,11 +18,11 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,11 +31,11 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
   // Set the react version
-  settings: { react: { version: '18.3' } },
+  settings: { react: { version: "18.3" } },
   plugins: {
     // Add the react plugin
     react,
@@ -44,10 +44,11 @@ export default tseslint.config({
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
+    ...react.configs["jsx-runtime"].rules,
   },
-})
+});
 ```
+
 ---
 
 ## Additional Features in This Template
@@ -59,7 +60,7 @@ This repository is a **template repo** preconfigured with the following features
 - **Path Aliases**: Path aliases are configured for both app-related files and Node.js-related files for consistency and future-proofing. The alias `@src/*` maps to the `src` directory, making imports cleaner and easier to manage.
   - Example:
     ```typescript
-    import MyComponent from '@src/components/MyComponent';
+    import MyComponent from "@src/components/MyComponent";
     ```
 - **ESLint Configuration**: Includes type-aware linting rules and React-specific linting rules for better code quality.
 
@@ -70,11 +71,13 @@ This repository is a **template repo** preconfigured with the following features
 Here are the commands to get started with this template:
 
 1. **Install Dependencies**:
+
    ```bash
    npm install
    ```
 
 2. **Start Development Server**:
+
    ```bash
    npm run dev
    ```
@@ -84,6 +87,7 @@ Here are the commands to get started with this template:
    npm run build
    ```
 4. **Preview Production Build**:
+
    ```bash
    npm run preview
    ```
@@ -100,12 +104,15 @@ Here are the commands to get started with this template:
 For consistency and future-proofing, path aliases have been added to both `tsconfig.app.json` and `tsconfig.node.json`. This ensures that the alias `@src/*` works seamlessly in both app-related files and Node.js-related files (e.g., `vite.config.ts`).
 
 ### Example Usage:
+
 ```typescript
-import MyComponent from '@src/components/MyComponent';
+import MyComponent from "@src/components/MyComponent";
 ```
 
 ### Configuration:
+
 - **`tsconfig.app.json`**:
+
   ```jsonc
   "baseUrl": ".",
   "paths": {
@@ -114,6 +121,7 @@ import MyComponent from '@src/components/MyComponent';
   ```
 
 - **`tsconfig.node.json`**:
+
   ```jsonc
   "baseUrl": ".",
   "paths": {
@@ -130,7 +138,9 @@ import MyComponent from '@src/components/MyComponent';
 Tailwind CSS is preconfigured in this template. To customize it, edit the `tailwind.config.js` file.
 
 ### Example:
+
 To add custom colors:
+
 ```javascript
 module.exports = {
   theme: {
@@ -148,7 +158,10 @@ module.exports = {
 ### 2. **Add a Section for Dependencies**
 You could list the key dependencies and their purposes for future reference. For example:
 
-```markdown
+```
+
+markdown
+
 ## Key Dependencies
 
 - **React** (`react` and `react-dom`): Core library for building user interfaces.
@@ -159,13 +172,20 @@ You could list the key dependencies and their purposes for future reference. For
 - **ESLint**: Linter for maintaining code quality.
 - **Prettier**: Code formatter for consistent styling.
 - **Prettier Plugin for Tailwind CSS**: Ensures Tailwind classes are sorted automatically.
-```
+
+````
 ## Future Enhancements
 
 - Add unit testing with Vitest or Jest.
 - Configure CI/CD pipelines for automated builds and deployments.
 - Add more Tailwind CSS plugins (e.g., `@tailwindcss/forms`, `@tailwindcss/typography`).
 
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd vite-ttt-repo
 
 ## Notes for Future Reference
 
@@ -176,3 +196,4 @@ You could list the key dependencies and their purposes for future reference. For
 ---
 
 Feel free to customize this template further to suit your project needs!
+````
