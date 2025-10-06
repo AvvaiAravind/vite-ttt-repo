@@ -40,6 +40,15 @@ export default [
 
       "no-console": ["warn", { allow: ["warn", "error"] }],
 
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+
       "@typescript-eslint/no-explicit-any": "warn",
 
       "react/react-in-jsx-scope": "off",
