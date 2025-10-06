@@ -1,5 +1,6 @@
 # Ignore node_modules
 node_modules/
+node_modules/.vite
 
 # Ignore build output
 dist/
@@ -20,9 +21,25 @@ pnpm-lock.yaml
 # Ignore Vite cache
 .vite/
 
-# Ignore Prettier configuration itself
-.prettierrc
-.prettierignore
-
 # Ignore other common files
 coverage/
+
+.vscode/
+*.swp
+.idea/
+
+coverage/
+test-results/
+
+# Husky (if applicable)
+.husky/_/
+
+# Generated/minified files
+*.min.js
+*.min.css
+*.bundle.js
+
+# Generated/minified files
+*.min.js
+*.min.css
+*.bundle.js

@@ -8,10 +8,10 @@
 
     /* alias paths - not necessary in future if we want to work with node files it will be useful */
 
-    "baseUrl": ".",
-    "paths": {
-      "@src/*": ["./src/*"]
-    },
+    /*  "baseUrl": ".",
+    "paths": {     
+      "~/*": ["./src/*"]
+    }, */ // no need said by both chatgpt & claude
 
     /* Bundler mode */
     "moduleResolution": "bundler",
