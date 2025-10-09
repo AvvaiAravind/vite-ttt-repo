@@ -18,12 +18,10 @@
   }
 
   body {
-    @apply flex place-content-center min-w-xs min-h-screen;
+    @apply flex min-h-screen min-w-xs place-content-center;
   }
 
   #root {
-     @apply flex flex-grow min-h-screen
+    @apply flex min-h-screen flex-grow;
   }
 }
-
-
