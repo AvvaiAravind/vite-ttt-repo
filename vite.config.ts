@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   // build
   build: {
-    sourcemap: true, // Helpful for debugging production
+    sourcemap: true, // Helpful for debugging production, cursor said need to but that as false since it says production need clarification
   },
 
   //server
