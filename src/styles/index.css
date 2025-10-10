@@ -3,7 +3,6 @@
 @import "./abstracts/variables.css";
 @import "./base/base.css";
 @import "./components/button.css";
-@import "./layout/layout.css";
 @import "./utilities/utilities.css";
 
 @custom-variant dark (&: is(.dark *));
