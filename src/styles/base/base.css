@@ -1,0 +1,17 @@
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-inter font-synthesis text-rendering bg-background text-foreground antialiased;
+  }
+
+  body {
+    @apply min-w-xs flex min-h-screen place-content-center;
+  }
+
+  #root {
+    @apply flex min-h-screen flex-grow;
+  }
+}
