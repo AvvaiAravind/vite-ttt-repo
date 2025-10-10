@@ -17,11 +17,11 @@
 
 @layer base {
   html {
-    @apply font-inter antialiased font-synthesis text-rendering;
+    @apply font-inter font-synthesis text-rendering antialiased;
   }
 
   body {
-    @apply flex min-h-screen min-w-xs place-content-center;
+    @apply min-w-xs flex min-h-screen place-content-center;
   }
 
   #root {

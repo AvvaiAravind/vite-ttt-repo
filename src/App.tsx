@@ -1,11 +1,15 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
+
 function App() {
-  return (
-    <div className="flex flex-grow items-center justify-center">
-      <p className="bg-blue-600 p-4 text-center text-5xl text-white">
-        Vite Template
-      </p>
-    </div>
-  );
+  /*   this is the place we need to wrap our app with redux provider if we are using redux
+  also we can add any context providers here if needed
+  e.g., AuthProvider, ThemeProvider, etc.
+  also tanstack query provider if we are using react-query
+  also we can add error boundary here if needed */
+
+  // Integrate the router with the application
+  return <RouterProvider router={router} />;
 }
 
 export default App;
