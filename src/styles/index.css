@@ -5,4 +5,4 @@
 @import "./components/button.css";
 @import "./utilities/utilities.css";
 
-@custom-variant dark (&: is(.dark *));
+@custom-variant dark (&:is(.dark *));
